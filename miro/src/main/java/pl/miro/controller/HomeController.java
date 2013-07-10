@@ -1,4 +1,4 @@
-package pl.miro.aplikacja;
+package pl.miro.controller;
 
 import java.text.DateFormat;
 import java.util.Date;

@@ -22,4 +22,10 @@ public class UserDaoImpl extends AbstractDaoImpl<User, Integer> implements UserD
         return findByCriteria(Restrictions.like("userName", userName, MatchMode.START));
     }
 
+    @Override
+    public User findUser(String userName) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }
