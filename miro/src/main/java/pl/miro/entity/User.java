@@ -1,16 +1,3 @@
-/***********************************************************
-* Elektroniczna Platforma Gromadzenia, Analizy 
-* i Udostępniania zasobów cyfrowych o Zdarzeniach Medycznych
-* 
-* Autorskie Prawa Majątkowe -
-* Centrum Systemów Informacyjnych Ochrony Zdrowia (CSIOZ).
-************************************************************
-* Wykonawca: Konsorcjum Kamsoft/Asseco Poland 
-* Osoba odpowiedzialna: Mirosław Radwański
-* Data utworzenia: 10-07-2013
-************************************************************/
-
-
 package pl.miro.entity;
 
 import java.util.Date;
@@ -25,9 +12,8 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 @Entity
-@Table (name = "blog_user")
+@Table (name = "uzytkownik")
 public class User {
-
     
     @Id
     @GeneratedValue(generator = "account_id", strategy = GenerationType.SEQUENCE)
