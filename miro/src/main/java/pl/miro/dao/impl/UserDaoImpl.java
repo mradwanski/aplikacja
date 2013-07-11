@@ -24,8 +24,11 @@ public class UserDaoImpl extends AbstractDaoImpl<User, Integer> implements UserD
 
     @Override
     public User findUser(String userName) {
-        // TODO Auto-generated method stub
-        return null;
+    	
+    	for (User user : findByCriteria(Restrictions.eq("userName", userName))) {
+			return user;
+		}
+    	return null;
     }
 
 }
