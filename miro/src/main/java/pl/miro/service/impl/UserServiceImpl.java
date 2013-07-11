@@ -26,14 +26,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(readOnly = false)
     public void saveUser(User user) {
-        // TODO Auto-generated method stub
+       userDao.saveOrUpdate(user);
         
     }
 
     @Override
+    @Transactional(readOnly = false)
     public void deleteUser(String userName) {
-        // TODO Auto-generated method stub
+      //TODO
         
     }
 
