@@ -24,7 +24,7 @@ public class User {
     private String userName;
 
     @Column (name = "first_name", nullable = false)
-    private String firstName;
+    private String imie;
 
     @Column (name = "last_name", nullable = false)
     private String lastName;
@@ -43,7 +43,7 @@ public class User {
 
     public User(String userName, String firstName, String lastName, String password) {
         this.userName = userName;
-        this.firstName = firstName;
+        this.imie = firstName;
         this.lastName = lastName;
         this.password = password;
     }
@@ -56,12 +56,12 @@ public class User {
         this.userName = userName;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getImie() {
+        return imie;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setImie(String imie) {
+        this.imie = imie;
     }
 
     public String getLastName() {
@@ -110,4 +110,5 @@ public class User {
     public int hashCode() {
         return 13 * userName.hashCode();
     }
+
 }
