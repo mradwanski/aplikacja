@@ -41,11 +41,19 @@ public class User {
     public User() {
     }
 
-    public User(String userName, String firstName, String lastName, String password) {
+    public User(String userName, String imie, String lastName, String password) {
         this.userName = userName;
-        this.imie = firstName;
+        this.imie = imie;
         this.lastName = lastName;
         this.password = password;
+    }
+    
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getUserName() {

@@ -56,6 +56,9 @@ public class UserController {
 
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public String updateUser( Model model, User user) {
+        User userOLD = userService.findByUserName(user.getUserName()); //TODO request przysyła obiekt User bez id - tylko z polami obecnymi na formatce
+        user.setId(userOLD.getId());
+        user.setCreatedOn(userOLD.getCreatedOn());
         userService.saveUser(user);
         model.addAttribute("saved", "success");
         return "update";

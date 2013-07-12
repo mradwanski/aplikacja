@@ -37,7 +37,7 @@
 	<c:forEach var="current" items="${users}">
 		<tr>
 		<td>${current.userName}</td>
-		<td>${current.firstName}</td>
+		<td>${current.imie}</td>
 		<td>${current.lastName}</td>
 		<td><a href="/aplikacja/edit/${current.userName}">Edit</a></td>
 		<td><a href="/aplikacja/delete/${current.userName}">Delete</a></td>
